@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #0f0f10;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    border-bottom: 0.1px solid rgb(154, 154, 154);
+    margin-bottom: 50px;
+}
+
+.logo {
+    cursor: pointer;
+    height: 30px;
+    width: 60px;
+}
+
+.logo:hover {
+    transition: all 0.3s ease 0s;
+    transform: translateY(-5px);
+}
+
+.nav_link {
+    list-style: none;
+}
+
+.nav_link li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_link li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_link li a:hover {
+    color: #0088a9;
+    background-color: rgba(0, 136, 169, 1);
+    border-radius: 50px;
+    color: #fff;
+    padding: 10px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin: 20px 0;
+}
+
+button:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+}
+
+
+section{
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.tenis {
+    height: 400px;
+    width: 500px;
+    padding: 30px;
+}
+
+h3 {
+    margin: 20px 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+    display: inline-block;
+}
+
+p {
+    margin: 10px 0;
+    width: 500px;
+}
+
+.container_subscribe {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    outline: none;
+    width: 300px;
+    height: 24px;
+    border: 1px solid #0088a9;
+    border-radius: 10px;
+    padding-left: 10px;    
+}
+
+.textsub {
+    margin-bottom: 10px;
+}
+
+#subscribe {
+    margin: 10px;
+}
+
+footer  {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Existing CSS */
+
+/* Add this media query for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 5%;
+    }
+
+    .nav_link {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .nav_link li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tenis {
+        max-width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container_text {
+        text-align: center;
+    }
+
+    p {
+        width: auto;
+    }
+
+    .container_subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 100%;
+        max-width: 300px;
+    }
+}
